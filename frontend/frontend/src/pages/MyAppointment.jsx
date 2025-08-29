@@ -30,7 +30,7 @@ function MyAppointment() {
     },[])
     const cancelAppointment = async(id)=>{
         try{  const token =  localStorage.getItem('token');
-              const res = await fetch(`http://localhost:5000/appointments/deleteAppointment/${id}`,
+              const res = await fetch(`https://medicalclinicmanagementsystem.onrender.com/appointments/deleteAppointment/${id}`,
 
                 { 
                     method :"POST",
@@ -70,7 +70,7 @@ function MyAppointment() {
        <div className='flex items-center gap-4'>
 
          <img className='w-20 h-20 rounded-full object-cover border'
-         src={`http://localhost:5000/uploads/${app?.doctor.image}`} alt='siu'/>
+         src={`https://medicalclinicmanagementsystem.onrender.com/uploads/${app?.doctor.image}`} alt='siu'/>
 
 <div className=''>
     <h3 className='text-xl font-semibold'>{app.doctor?.name}</h3>
