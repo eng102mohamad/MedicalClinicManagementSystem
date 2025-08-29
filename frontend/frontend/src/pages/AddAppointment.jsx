@@ -64,7 +64,7 @@ function AddAppointment() {
     <option value=''>Select Doctor</option>
      {doctor?.map((doc) => (
     <option key={doc._id} value={doc._id}>
-      {doc.name} - {doc.specialty}
+      {doc.doctor}
     </option>
       ))}
      </select>
