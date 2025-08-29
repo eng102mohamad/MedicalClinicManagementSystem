@@ -10,7 +10,7 @@ function MyAppointment() {
         const fetchAppointmrnt = async()=>{
             try{
               const token =  localStorage.getItem('token');
-              const res = await fetch('http://localhost:5000/appointments/myAppointments',
+              const res = await fetch('https://medicalclinicmanagementsystem.onrender.com/appointments/myAppointments',
                 {
                 headers:{Authorization:`Bearer ${token}`} ,
             })
