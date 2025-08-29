@@ -11,7 +11,7 @@ function AddAppointment() {
     })
     useEffect(()=>{
         const fetchDoctor = async()=>{
-            const res= await fetch("https://medicalclinicmanagementsystem.onrender.com/allDoctors")
+            const res= await fetch("https://medicalclinicmanagementsystem.onrender.com/doctors/allDoctors")
             const data = await res.json()
             setDoctor(data)
         }
@@ -53,21 +53,22 @@ function AddAppointment() {
             <h2 className='text-2xl font-bold mb-6 text-center'>
                 Add Appointmemt
             </h2>
-           <label className='block mb-2 text-sm font-semibold'>Doctor</label>
-      <select 
-     name='doctor' 
-     value={form.doctor} 
-      onChange={handleChange} 
-     required
-     className='w-full mb-4 p-2 border rounded'
-     >
-    <option value=''>Select Doctor</option>
-     {doctor?.map((doc) => (
+         <label className='block mb-2 text-sm font-semibold'>Doctor</label>
+<select 
+  name='doctor' 
+  value={form.doctor} 
+  onChange={handleChange} 
+  required
+  className='w-full mb-4 p-2 border rounded'
+>
+  <option value=''>Select Doctor</option>
+  {doctor?.map((doc) => (
     <option key={doc._id} value={doc._id}>
-      {doc.doctor}
+      {doc.name} - {doc.specialty}
     </option>
-      ))}
-     </select>
+  ))}
+</select>
+
 
             <label className='block mb-2 text-sm font-semibold'>Date</label>
             <input
