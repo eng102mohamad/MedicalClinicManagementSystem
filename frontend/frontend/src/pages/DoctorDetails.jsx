@@ -27,7 +27,7 @@ function DoctorDetails() {
   return (
     <div className=' flex flex-col md:flex-row items-center max-w-5xl max-auto
      p-8 bg-gray-100 min-h-screen'>
-        <img src={`http://localhost:5000/uploads/${doctor?.image}`} alt='siu' className='w-64 h-64 object-cover rounded-lg shadow-md mb-6 md:mb-0 md:mr-10'/>
+        <img src={`https://medicalclinicmanagementsystem.onrender.com/uploads/${doctor?.image}`} alt='siu' className='w-64 h-64 object-cover rounded-lg shadow-md mb-6 md:mb-0 md:mr-10'/>
 
         <div className='space-y-4'>
             <h2 className='text-4xl font-bold text-[#008e9b]'>{doctor?.name}</h2>
