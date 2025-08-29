@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react';
     const [departments,setDepartments] = useState([]);
     const[activeTab,setActiveTab]=useState([]);
     useEffect(()=>{
-        fetch("http://localhost:5000/departments/allDepartment")
+        fetch("https://medicalclinicmanagementsystem.onrender.com/departments/allDepartment")
          .then((res) => res.json()) 
         .then((data)=>{
             setDepartments(data)
