@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 7096;
 //استدعاء dotenv والتي ملفها هو env
 connectDB();//استدعاء الاتصال بلقاعدة البيانات 
 app.use(cors({
-  origin: "http://localhost:3000", // React
+  origin: "https://medical-clinic-management-system.vercel.app/", // React
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
