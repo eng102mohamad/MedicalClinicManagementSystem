@@ -7,8 +7,8 @@ function Status() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const doctorStatus = await fetch("http://localhost:5000/doctors/count");
-        const departmentsStatus = await fetch("http://localhost:5000/departments/count");
+        const doctorStatus = await fetch("https://medicalclinicmanagementsystem.onrender.com/doctors/count");
+        const departmentsStatus = await fetch("https://medicalclinicmanagementsystem.onrender.com/departments/count");
 
         const doctorData = await doctorStatus.json();
         const departmentsData = await departmentsStatus.json();
