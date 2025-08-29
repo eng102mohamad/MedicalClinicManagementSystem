@@ -31,7 +31,7 @@ const[doctors,setDoctors] = useState([]);
                 <div className='bg-white rounded-lg shadow p-4 text-center' key={doc?.id}>
                     <Link to={`/doctor/${doc?._id}`}>
                     <img className='w-32 h-32 mx-auto rounded-full object-cover border mb-4'
-                     src={`http://localhost:5000/uploads/${doc?.image}`} alt='siu'/>
+                     src={`https://medicalclinicmanagementsystem.onrender.com/uploads/${doc?.image}`} alt='siu'/>
 
                      <h3 className='text-xl font-semibold'>{doc?.name}</h3>
                      <p className='text-gray-600'>{doc?.specialty}</p>
