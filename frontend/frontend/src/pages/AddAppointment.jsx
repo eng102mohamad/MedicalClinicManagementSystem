@@ -11,7 +11,7 @@ function AddAppointment() {
     })
     useEffect(()=>{
         const fetchDoctor = async()=>{
-            const res= await fetch("http://localhost:5000/doctors/allDoctors")
+            const res= await fetch("https://medicalclinicmanagementsystem.onrender.com/allDoctors")
             const data = await res.json()
             setDoctor(data)
         }
@@ -23,7 +23,7 @@ function AddAppointment() {
     const handleSubmit= async(e)=>{
         e.preventDefault()
         const token =localStorage.getItem("token");
-        const res = await fetch("http://localhost:5000/appointments/createAppointment",{    
+        const res = await fetch("https://medicalclinicmanagementsystem.onrender.com/appointments/createAppointment",{    
               method: "POST",
             headers: {
               "Content-Type": "application/json",
