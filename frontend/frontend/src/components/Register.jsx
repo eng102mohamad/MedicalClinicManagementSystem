@@ -12,7 +12,7 @@ const handleSubmit = async(e) => {
   setError(null);
   console.log("form before send:", form);  // ✅ اطبع البيانات
 
-  const res = await fetch("http://localhost:5000/user/register", {
+  const res = await fetch("https://medicalclinicmanagementsystem.onrender.com/user/register", {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
