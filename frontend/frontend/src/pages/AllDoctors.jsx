@@ -7,7 +7,7 @@ const[doctors,setDoctors] = useState([]);
    useEffect(()=>{
     const fectedDoctors = async()=>{
         try{
-            const res = await fetch("http://localhost:5000/doctors/allDoctors")
+            const res = await fetch("https://medicalclinicmanagementsystem.onrender.com/doctors/allDoctors")
             const data = await res.json();
             if(!res.ok){
                 throw new Error(data.message || "failed to show Doctors")
