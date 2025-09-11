@@ -5,6 +5,8 @@ import About from "../components/About";
 import Status from "../components/status";
 import Departments from "../components/Departments";
 import Doctors from "../components/Doctors";
+import Footer from "../components/Footer";
+
 
 function Home(){
     return(
@@ -14,7 +16,7 @@ function Home(){
           <Status/>
           <Departments/>
           <Doctors/>
-          
+         <Footer/>
         </div>
         
     );
